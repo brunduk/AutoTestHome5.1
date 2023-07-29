@@ -41,7 +41,7 @@ public class DataGenerator {
         // TODO: добавить логику для объявления переменной phone и задания её значения, для генерации можно
         // использовать Faker
         Faker faker = new Faker();
-        String phone = faker.phoneNumber().phoneNumber();
+        String phone = faker.numerify("+" + "7##########");
         return phone;
     }
 
